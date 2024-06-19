@@ -1,0 +1,99 @@
+.hero {
+    margin-top: 10rem;
+}
+
+.--hero-connect {
+    text-align: center;
+}
+
+.--hero-image {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.--hero-image img {
+    width: 80%; /* Make the image responsive */
+    max-width: 60rem;
+    height: 20rem;
+    border-radius: 15px;
+}
+
+.--hero-content {
+    background-color: white;
+    color: black;
+    width: 80%;
+    max-width: 35rem;
+    margin: -3rem auto 0; /* Center the content and adjust margin */
+    position: relative;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.--hero-slider {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.--hero-location {
+    display: flex;
+    gap: 20px; /* Adjust gap for smaller screens */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.--hero-search {
+    display: flex;
+    justify-content: center; /* Center the search button */
+    margin-top: -8px;
+}
+
+.--hero-search button {
+    padding: 5px;
+    width: 100%;
+    max-width: 8rem;
+    color: white;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(253,29,29,1) 31%, rgba(252,176,69,1) 100%);
+}
+
+/* Media queries */
+@media (min-width: 600px) {
+    .--hero-content {
+        margin-left: 25rem;
+        margin-top: -3rem;
+    }
+
+    .--hero-search {
+        justify-content: flex-end;
+    }
+    
+    
+}
+
+@media (max-width: 599px) {
+    .hero {
+        margin-top: 5rem;
+    }
+
+    .--hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .--hero-content {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -3rem;
+    }
+
+    .--hero-slider, .--hero-location {
+        gap: 10px;
+    }
+
+    .--hero-connect {
+        margin-top: 8rem;
+        font-size: 0.65rem;
+    }
+}

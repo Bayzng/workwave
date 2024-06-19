@@ -1,0 +1,85 @@
+.Benefit {
+    display: flex;
+    margin-top: 4rem;
+    padding: 6rem 15rem;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.--Benefit-img {
+    background-color: red;
+    border-radius: 40rem;
+}
+
+.--Benfit-connect h3 {
+    color: #ff5900;
+}
+
+.--Benfit-connect h2 {
+    font-size: 2.5rem;
+}
+
+.--Benefit-button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .Benefit {
+        padding: 4rem 10rem;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .Benefit {
+        padding: 3rem 5rem;
+        gap: 3rem;
+    }
+    .--Benfit-connect h2 {
+        font-size: 2rem;
+    }
+    .--Benefit-button {
+        padding: 8px;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Benefit {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 3rem;
+        gap: 2rem;
+    }
+    .--Benfit-connect h2 {
+        font-size: 1.8rem;
+    }
+    .--Benefit-button {
+        padding: 6px;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .--Benefit-img img {
+        width: 18rem;
+    }
+
+    .Benefit {
+        padding: 2rem 0.1rem;
+        gap: 1rem;
+    }
+    .--Benfit-connect h2 {
+        font-size: 1.5rem;
+    }
+    .--Benefit-button {
+        padding: 5px;
+        margin-top: 1rem;
+    }
+}

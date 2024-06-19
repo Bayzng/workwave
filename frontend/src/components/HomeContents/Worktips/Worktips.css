@@ -1,0 +1,43 @@
+.worktips {
+    margin-top: 4rem;
+}
+
+.--worktips-about {
+    text-align: center;
+    color: #ff5900;
+}
+
+.--worktips-info {
+    text-align: center;
+}
+
+.--worktips-review {
+    display: flex;
+    margin-top: -10rem;
+    padding: 14rem;
+    gap: 20px;
+}
+
+.--worktips-section {
+    text-align: center;
+}
+
+/* Media query for tablets (landscape and portrait) */
+@media (max-width: 1024px) {
+    .--worktips-review {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 4rem;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .worktips {
+        margin-top: 2rem;
+    }
+
+    .--worktips-review {
+        padding: 2rem;
+    }
+}

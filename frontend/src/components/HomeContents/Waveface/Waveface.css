@@ -1,0 +1,170 @@
+.Waveface {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.--Workwave-section {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.--Waveface-item {
+    min-width: 100%; /* Ensure each item takes up the full width of the container */
+    transition: transform 0.5s ease-in-out;
+}
+
+.--Waveface-bg img {
+    width: 100%; /* Adjust to fit the container */
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    height: 14rem;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.--Waveface-bayz {
+    margin-top: -7rem;
+    position: relative;
+}
+
+.--Waveface-bayz img {
+    width: 15rem;
+    margin-left: 2rem;
+}
+
+.--Waveface-content h2 {
+    margin-left: 2.5rem;
+    margin-top: -0.6rem;
+}
+
+.--Waveface-content p {
+    margin-left: 6rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .Waveface {
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }
+
+    .--Waveface-bg img {
+        height: 12rem;
+    }
+
+    .--Waveface-bayz img {
+        width: 13rem;
+        margin-left: 1.5rem;
+    }
+
+    .--Waveface-content h2 {
+        margin-left: 2rem;
+    }
+
+    .--Waveface-content p {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .Waveface {
+        margin-top: 1.5rem;
+        margin-left: 4rem;
+    }
+
+    .--Waveface-bg img {
+        height: 10rem;
+    }
+
+    .--Waveface-bayz img {
+        width: 12rem;
+        margin-left: 1rem;
+    }
+
+    .--Waveface-content h2 {
+        margin-left: 1.5rem;
+    }
+
+    .--Waveface-content p {
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Waveface {
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .--Waveface-bg img {
+        height: 8rem;
+    }
+
+    .--Waveface-bayz img {
+        width: 10rem;
+        margin-left: 0.5rem;
+    }
+
+    .--Waveface-content h2 {
+        margin-left: 1rem;
+    }
+
+    .--Waveface-content p {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Waveface {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .--Waveface-bg img {
+        height: 9rem;
+    }
+
+    .--Waveface-bayz img {
+        width: 10rem;
+        margin-left: 0;
+    }
+
+    .--Waveface-content h2 {
+        margin-left: 0.2rem;
+        font-size: 17px;
+    }
+
+    .--Waveface-content p {
+        margin-left: 2rem;
+    }
+
+    .--Waveface-bg img {
+        width: 100%; /* Adjust to fit the container */
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        height: 14rem;
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+}
+
+
+@media screen and (min-width: 350px) {
+    .rm {
+        display: none;
+    }
+
+    .--Waveface-flex {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    .rm {
+        display: block;
+    }
+    .--Waveface-flex {
+        display: flex;
+        gap: 4px;
+    }
+}
