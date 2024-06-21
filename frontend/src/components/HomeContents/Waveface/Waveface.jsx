@@ -1,72 +1,56 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import wavebg from "../../../assets/wavebg.jpg";
-import bayz from "../../../assets/bayz.png";
+import wavebayz from "../../../assets/bayz.png";
 import "./Waveface.css";
 
 const Waveface = () => {
-  const slideIndex = useRef(0);
-
-  useEffect(() => {
-    const slides = document.querySelectorAll(".--Waveface-ite");
-    let currentIndex = 0;
-
-    const showSlide = (index) => {
-      slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${100 * (i - index)}%)`;
-      });
-    };
-
-    const nextSlide = () => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showSlide(currentIndex);
-    };
-
-    const interval = setInterval(nextSlide, 3000);
-
-    showSlide(currentIndex);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="Waveface">
-      <h2>Best Host On WorkWave</h2>
-      <div className="--Workwave-section">
-        <div className="--Waveface-item">
-          <div className="--Waveface-bg">
-            <img src={wavebg} alt="background" />
-          </div>
-          <div className="--Waveface-bayz">
-            <div className="--Waveface-flex">
-              <div className="--Waveface-content">
-                <img src={bayz} alt="bayz" />
-                <h2>Abdulakeem Adebayo</h2>
-                <p>CEO WorkWave</p>
-              </div>
-              <div className="--Waveface-content">
-                <img src={bayz} alt="bayz" />
-                <h2>Abdulakeem Adebayo</h2>
-                <p>CEO WorkWave</p>
-              </div>
-              <div className="--Waveface-content rm">
-                <img src={bayz} alt="bayz" />
-                <h2>Abdulakeem Adebayo</h2>
-                <p>CEO WorkWave</p>
-              </div>
-              <div className="--Waveface-content rm">
-                <img src={bayz} alt="bayz" />
-                <h2>Abdulakeem Adebayo</h2>
-                <p>CEO WorkWave</p>
-              </div>
-              <div className="--Waveface-content rm">
-                <img src={bayz} alt="bayz" />
-                <h2>Abdulakeem Adebayo</h2>
-                <p>CEO WorkWave</p>
-              </div>
+    <div className="waveface">
+      <h3 className="--waveface-info">QuickLink Faces</h3>
+      <h2 className="--waveface-best">Best Host Of QuickLink</h2>
+
+      <div className="--waveface-">
+
+        <div className="--waveface-hosts slideOne">
+          <img src="https://images.unsplash.com/photo-1716278518129-3d803cc2460b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D" alt="" />
+
+          <div className="--waveface-bayz">
+            <img src={wavebayz} alt="" />
+            <div className="--waveface-details">
+              <h3>Abdulakeem Adebayo</h3>
+              <p>CEO QuickLink</p>
             </div>
           </div>
         </div>
-        {/* Add more items as needed */}
+
+        {/* second */}
+
+        <div className="--waveface-hosts slideTwo">
+          <img src="https://images.unsplash.com/photo-1718471472310-77a63c5fad95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDB8fHxlbnwwfHx8fHw%3D" alt="" />
+
+          <div className="--waveface-bayz">
+            <img src={wavebayz} alt="" />
+            <div className="--waveface-details">
+              <h3>Abdulakeem Adebayo</h3>
+              <p>CEO QuickLink</p>
+            </div>
+          </div>
+        </div>
+
+        {/* second */}
+
+        <div className="--waveface-hosts slideThree">
+          <img src="https://images.unsplash.com/photo-1716278518129-3d803cc2460b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D" alt="" />
+
+          <div className="--waveface-bayz">
+            <img src={wavebayz} alt="" />
+            <div className="--waveface-details">
+              <h3>Abdulakeem Adebayo</h3>
+              <p>CEO QuickLink</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );

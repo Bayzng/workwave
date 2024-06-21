@@ -6,6 +6,7 @@ import Worktips from "../HomeContents/Worktips/Worktips";
 import Hosts from "../HomeContents/Hosts/Hosts";
 import Benefit from "../HomeContents/Benefit/Benefit";
 import Waveface from "../HomeContents/Waveface/Waveface";
+import Footer from "../HomeContents/Footer/Footer";
 
 const Home = () => {
   return (
@@ -30,6 +31,9 @@ const Home = () => {
       </div>
       <div>
         <Waveface/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );

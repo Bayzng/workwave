@@ -1,188 +1,96 @@
-/* Base Styles */
-.Waveface {
-    margin-top: 3rem;
-    overflow: hidden;
-    padding: 10px;
-}
-
-.Waveface h2 {
-    color: indigo;
-}
-
-.--Workwave-section {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.--Waveface-item {
-    min-width: 100%; 
-    transition: transform 0.5s ease-in-out;
-}
-
-.--Waveface-bg img {
-    width: 100%;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-    height: 14rem;
-    object-fit: cover;
-}
-
-.--Waveface-bayz {
-    margin-top: -7rem;
-    position: relative;
-}
-
-.--Waveface-bayz img {
-    width: 15rem;
-    margin-left: 2rem;
-}
-
-.--Waveface-content h2 {
-    margin-left: 2.5rem;
-    margin-top: -0.6rem;
-}
-
-.--Waveface-content p {
-    margin-left: 6rem;
-}
-
-/* Media Queries */
-
-/* Extra Large Devices (1200px and down) */
-@media (max-width: 1200px) {
-    .Waveface {
-        margin-top: 2rem;
-        margin-left: 5rem;
-    }
-
-    .--Waveface-bg img {
-        height: 12rem;
-    }
-
-    .--Waveface-bayz img {
-        width: 13rem;
-        margin-left: 1.5rem;
-    }
-
-    .--Waveface-content h2 {
-        margin-left: 2rem;
-    }
-
-    .--Waveface-content p {
-        margin-left: 5rem;
-    }
-}
-
-/* Large Devices (992px and down) */
-@media (max-width: 992px) {
-    .Waveface {
-        margin-top: 1.5rem;
-        margin-left: 4rem;
-    }
-    
-
-    .--Waveface-bg img {
-        height: 10rem;
-    }
-
-    .--Waveface-bayz img {
-        width: 12rem;
-        margin-left: 1rem;
-    }
-
-    .--Waveface-content h2 {
-        margin-left: 1.5rem;
-    }
-
-    .--Waveface-content p {
-        margin-left: 4rem;
-    }
-}
-
-/* Medium Devices (768px and down) */
-@media (max-width: 768px) {
-    .Waveface {
-        margin-top: 1rem;
-        margin-left: 2rem;
-    }
-
-    .--Waveface-bg img {
-        height: 8rem;
-    }
-
-    .--Waveface-bayz img {
-        width: 10rem;
-        margin-left: 0.5rem;
-    }
-
-    .--Waveface-content h2 {
-        margin-left: 1rem;
-    }
-
-    .--Waveface-content p {
-        margin-left: 3rem;
-    }
-}
-
-/* Small Devices (576px and down) */
-@media (max-width: 576px) {
-    .Waveface {
-        margin-top: 0.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .--Waveface-bg img {
-        height: 9.5rem;
-    }
-
-    .--Waveface-bayz img {
-        /* width: 8rem; */
-        margin-left: 0;
-        margin-top: 2rem;
-        margin-right: 1rem;
-    }
-
-    .--Waveface-content h2 {
-        font-size: 15px;
-        margin-right: 1.1rem;
-        
-    }
-
-    .--Waveface-content p {
-        margin-left: 17px;
-        font-size: 14px;
-        margin-top: -2px;
-    }
-}
-
-/* Specific Screen Size Adjustments */
-
-/* For screens larger than 350px */
 @media screen and (min-width: 350px) {
-    .rm {
-        display: none;
+    .waveface {
+        /* margin-left: 7rem; */
+        margin-top: 4rem;
     }
 
-    .--Waveface-flex {
-        display: flex;
-        justify-content: space-around;
+    .--waveface-info {
+        margin-left: 1rem;
+    }
+
+    .--waveface-best {
         margin-left: 1rem;
     }
 }
-
-/* For screens larger than 1030px */
 @media screen and (min-width: 1030px) {
-    .rm {
-        display: block;
+    .waveface {
+        margin-left: 7rem;
+        margin-top: 4rem;
     }
 
-    .--Waveface-flex {
-        display: flex;
-        gap: 4px;
-        margin-right: 2.5rem;
+    .--waveface-info {
+        margin-left: 0;
     }
-    
+
+    .--waveface-best {
+        margin-left: 0;
+    }
 }
 
+.--waveface-info {
+    color: #ff5900;
+}
+
+.--waveface-hosts {
+    text-align: center;
+}
+
+.--waveface-hosts img {
+    width: 15rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 11rem;
+}
+
+.--waveface-bayz {
+    margin-top: -5rem;
+}
+
+.--waveface-bayz img {
+    width: 10rem;
+}
+
+.--waveface-details {
+    margin-top: -1rem;
+}
+
+.--waveface- {
+    display: flex;
+    gap: 3rem;
+}
+
+@keyframes slide {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    25%, 45% {
+        transform: translateX(-100%);
+    }
+    50%, 70% {
+        transform: translateX(-200%);
+    }
+    75%, 100% {
+        transform: translateX(-300%);
+    }
+}
+
+@media (max-width: 768px) {
+    .--waveface- {
+        display: flex;
+        gap: 0;
+        overflow: hidden;
+        width: 100vw;
+        position: relative;
+    }
+
+   
+
+    .--waveface-hosts {
+        min-width: 100vw;
+    }
+
+    .slideOne, .slideTwo, .slideThree {
+        animation: slide 12s infinite;
+    }
+}
 

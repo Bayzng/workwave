@@ -21,17 +21,17 @@ const Explore = () => {
           <div>
             <p className='numberOne'>01</p>
             <h3>Connect with people and expand your career</h3>
-            <p>At WorkWave, You'll enjoy unlimited connections to connect with millions of people.</p>
+            <p>At QuickLink, You'll enjoy unlimited connections to connect with millions of people.</p>
           </div>
           <div>
             <p className='numberTwo'>02</p>
             <h3>Connect with people and expand your career</h3>
-            <p>At WorkWave, You'll enjoy unlimited connections to connect with millions of people.</p>
+            <p>At QuickLink, You'll enjoy unlimited connections to connect with millions of people.</p>
           </div>
           <div>
             <p className='numberThree'>03</p>
             <h3>Connect with people and expand your career</h3>
-            <p>At WorkWave, You'll enjoy unlimited connections to connect with millions of people.</p>
+            <p>At QuickLink, You'll enjoy unlimited connections to connect with millions of people.</p>
           </div>
           <div className='--explore-button '> 
             <button>Connect</button>

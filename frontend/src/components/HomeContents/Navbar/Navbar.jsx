@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
-        <h2 className="artchain">WorkWave</h2>
+        <h2 className="artchain">QuickLick</h2>
         <ul>
           <li className="--nav-list-one">App</li>
           <li className="--nav-list-two">Developers</li>

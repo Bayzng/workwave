@@ -17,17 +17,17 @@ const Worktips = () => {
         <div className='--worktips-section'>
           <h2><BiCool  size={40} color='indigo' /></h2>
           <h3>Book & Relax</h3>
-          <p>On Workwake out booking section is perfectly transparent and magnificent</p>
+          <p>On QuickLink our booking section is perfectly transparent and magnificent</p>
         </div>
         <div className='--worktips-section'>
           <h2><IoMdCheckmarkCircleOutline size={40} color='green' /></h2>
           <h3>Book & Relax</h3>
-          <p>On Workwake out booking section is perfectly transparent and magnificent</p>
+          <p>On QuickLink our booking section is perfectly transparent and magnificent</p>
         </div>
         <div className='--worktips-section'>
           <h2><FaRegThumbsUp size={40} color='blue' /></h2>
           <h3>Book & Relax</h3>
-          <p>On Workwake out booking section is perfectly transparent and magnificent</p>
+          <p>On QuickLink our booking section is perfectly transparent and magnificent</p>
         </div>
       </div>
     </div>

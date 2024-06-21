@@ -1,0 +1,150 @@
+@media screen and (min-width: 350px) {
+    .footer {
+        background-color: black;
+        color: white;
+        height: 82vh;
+        margin-top: 7rem;
+      }
+      
+      .--footer-logo {
+          margin-top: 5rem;
+          display: flex;
+          gap: 10px;
+          padding: 20px;
+      }
+      
+      .--footer-logo img {
+          width: 4.5rem;
+          border-radius: 40px;
+      }
+      
+      .--footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5px;
+        gap: 1rem;
+      }
+
+      .--footer-contents {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1px;
+        gap: 2rem;
+      }
+      
+      .news-button {
+          padding: 10px;
+          border: 2px solid white;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          width: 13rem;
+          background-color: black;
+      }
+      
+      .news-button input {
+          outline: none;
+          border: none;
+          margin-right: 2rem;
+          background-color: black;
+          color: white;
+      }
+      
+      input::placeholder {
+          color: white;
+          opacity: 1;
+      }
+      
+      .submit-button {
+          padding: 12px;
+          border: 3px solid white;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          width: 6rem;
+      }
+      
+      .submit-button:hover {
+          background: none;
+          color: white;
+      }
+
+      .copyright {
+        margin-top: 1.8rem;
+        font-size: 12px;
+        /* color: rgba(255, 255, 0, 0.458); */
+      }
+}
+
+@media screen and (min-width: 1030px) {
+    .footer {
+        background-color: black;
+        color: white;
+        height: 42vh;
+        margin-top: 7rem;
+      }
+      
+      .--footer-logo {
+          margin-top: 5rem;
+          display: flex;
+          gap: 10px;
+          padding: 30px;
+      }
+      
+      .--footer-logo img {
+          width: 4rem;
+          border-radius: 40px;
+      }
+      
+      .--footer-content {
+        display: flex;
+        gap: 4rem;
+        margin-left: 30rem;
+        padding: 0;
+      }
+
+      .--footer-contents {
+        display: flex;
+        gap: 4rem;
+        margin-left: 30rem;
+        padding: 0;
+      }
+      
+      .news-button {
+          padding: 10px;
+          border: 2px solid white;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          width: 19rem;
+          background-color: black;
+      }
+      
+      .news-button input {
+          outline: none;
+          border: none;
+          margin-right: 10rem;
+          background-color: black;
+          color: white;
+      }
+      
+      input::placeholder {
+          color: white;
+          opacity: 1;
+      }
+      
+      .submit-button {
+          padding: 10px;
+          border: 3px solid white;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          width: 10rem;
+      }
+      
+      .submit-button:hover {
+          background: none;
+          color: white;
+      }
+
+      .copyright {
+        margin-top: 2rem;
+        margin-left: 1rem;
+      }
+}
