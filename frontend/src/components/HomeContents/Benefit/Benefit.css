@@ -82,4 +82,12 @@
         padding: 5px;
         margin-top: 1rem;
     }
+
+    .--Benfit-connect {
+        margin-right: 3rem;
+    }
+
+    .--Benfit-connect h2 {
+        font-size: 2rem;
+    }
 }

@@ -1,7 +1,12 @@
+/* Base Styles */
 .Waveface {
     margin-top: 3rem;
-    margin-left: 1rem;
-    overflow: hidden; /* Ensure content does not overflow */
+    overflow: hidden;
+    padding: 10px;
+}
+
+.Waveface h2 {
+    color: indigo;
 }
 
 .--Workwave-section {
@@ -10,16 +15,16 @@
 }
 
 .--Waveface-item {
-    min-width: 100%; /* Ensure each item takes up the full width of the container */
+    min-width: 100%; 
     transition: transform 0.5s ease-in-out;
 }
 
 .--Waveface-bg img {
-    width: 100%; /* Adjust to fit the container */
+    width: 100%;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     height: 14rem;
-    object-fit: cover; /* Ensure the image covers the entire area */
+    object-fit: cover;
 }
 
 .--Waveface-bayz {
@@ -42,6 +47,8 @@
 }
 
 /* Media Queries */
+
+/* Extra Large Devices (1200px and down) */
 @media (max-width: 1200px) {
     .Waveface {
         margin-top: 2rem;
@@ -66,11 +73,13 @@
     }
 }
 
+/* Large Devices (992px and down) */
 @media (max-width: 992px) {
     .Waveface {
         margin-top: 1.5rem;
         margin-left: 4rem;
     }
+    
 
     .--Waveface-bg img {
         height: 10rem;
@@ -90,6 +99,7 @@
     }
 }
 
+/* Medium Devices (768px and down) */
 @media (max-width: 768px) {
     .Waveface {
         margin-top: 1rem;
@@ -114,40 +124,41 @@
     }
 }
 
+/* Small Devices (576px and down) */
 @media (max-width: 576px) {
     .Waveface {
         margin-top: 0.5rem;
         margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .--Waveface-bg img {
-        height: 9rem;
+        height: 9.5rem;
     }
 
     .--Waveface-bayz img {
-        width: 10rem;
+        /* width: 8rem; */
         margin-left: 0;
+        margin-top: 2rem;
+        margin-right: 1rem;
     }
 
     .--Waveface-content h2 {
-        margin-left: 0.2rem;
-        font-size: 17px;
+        font-size: 15px;
+        margin-right: 1.1rem;
+        
     }
 
     .--Waveface-content p {
-        margin-left: 2rem;
-    }
-
-    .--Waveface-bg img {
-        width: 100%; /* Adjust to fit the container */
-        border-top-left-radius: 1.5rem;
-        border-top-right-radius: 1.5rem;
-        height: 14rem;
-        object-fit: cover; /* Ensure the image covers the entire area */
+        margin-left: 17px;
+        font-size: 14px;
+        margin-top: -2px;
     }
 }
 
+/* Specific Screen Size Adjustments */
 
+/* For screens larger than 350px */
 @media screen and (min-width: 350px) {
     .rm {
         display: none;
@@ -155,16 +166,23 @@
 
     .--Waveface-flex {
         display: flex;
-        gap: 10px;
+        justify-content: space-around;
+        margin-left: 1rem;
     }
 }
 
+/* For screens larger than 1030px */
 @media screen and (min-width: 1030px) {
     .rm {
         display: block;
     }
+
     .--Waveface-flex {
         display: flex;
         gap: 4px;
+        margin-right: 2.5rem;
     }
+    
 }
+
+

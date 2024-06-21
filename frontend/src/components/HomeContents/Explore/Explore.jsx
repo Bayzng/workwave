@@ -1,6 +1,7 @@
 import React from 'react'
-import connectImage from "../../../assets/connect.jpg"
+import happy from "../../../assets/happyTwo.avif"
 import connectImageTwo from "../../../assets/connect.png"
+import connectImageThree from "../../../assets/connectTwo.jpeg"
 import "./Explore.css"
 
 const Explore = () => {
@@ -13,7 +14,7 @@ const Explore = () => {
       <div className='--explore-content'>
 
         <div className='--explore-imgs'>
-          <img src={connectImage} alt="connect" />
+          <img src={happy} alt="connect" />
         </div>
 
         <div className='--explore-first'>
@@ -39,6 +40,11 @@ const Explore = () => {
         <div className='--explore-img'>
           <img src={connectImageTwo} alt="connect" />
         </div>
+
+        <div className='--explore-imgs'>
+          <img style={{marginTop: '2rem'}} src={connectImageThree} alt="connect" />
+        </div>
+
       </div>
     </div>
   )
